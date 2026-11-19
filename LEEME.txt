@@ -1,0 +1,16 @@
+Réplica de Change.org con Bootstrap 5
+=====================================
+Abre index.html en el navegador (no hace falta servidor ni conexión: Bootstrap e iconos van incluidos en assets/vendor).
+
+Páginas:
+- index.html        Landing page
+- peticiones.html   Listado de peticiones (filtros colapsables en móvil)
+- peticion.html     Detalle y firma de una petición
+- crear.html        Crear petición (formulario completo en una sola página)
+
+Estructura:
+- css/styles.css    Estilos propios (mobile first, con breakpoints de Bootstrap)
+- js/main.js        Interacción de maqueta: firma, contadores, vista previa (sin almacenar nada)
+- assets/img/       Ilustraciones SVG de sustitución
+- assets/vendor/    Bootstrap 5.3 e iconos (bootstrap-icons)
+- capturas/         Capturas móvil (390 px) y escritorio (1366 px) de cada página

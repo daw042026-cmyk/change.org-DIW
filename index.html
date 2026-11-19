@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>change.org | El cambio comienza aquí</title>
+  <link rel="stylesheet" href="assets/vendor/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/vendor/bootstrap-icons/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="landing">
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="site-header">
+    <nav class="navbar navbar-expand-lg bg-white py-2 border-bottom sticky-top">
+      <div class="container-fluid px-3 px-lg-5">
+        <a class="navbar-brand brand-cg" href="index.html">change<span>.org</span></a>
+        <a class="btn btn-outline-dark btn-pill px-3 ms-auto me-2 d-lg-none" href="crear.html">Inicia una petición</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal" aria-controls="menuPrincipal" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menuPrincipal">
+          <ul class="navbar-nav me-auto ms-lg-4 gap-lg-3 align-items-lg-center">
+            <li class="nav-item"><a class="nav-link fw-semibold" href="peticiones.html">Mis peticiones</a></li>
+            <li class="nav-item"><a class="nav-link fw-semibold" href="#">Programa de socios/as</a></li>
+            <li class="nav-item">
+              <a class="nav-link fw-semibold d-flex align-items-center gap-1" href="peticiones.html">
+                <i class="bi bi-search"></i>Buscar
+              </a>
+            </li>
+          </ul>
+          <div class="d-flex flex-column flex-lg-row align-items-lg-center gap-2 gap-lg-3 py-2 py-lg-0">
+            <a class="btn btn-outline-dark btn-pill px-3 d-none d-lg-inline-block" href="crear.html">Inicia una petición</a>
+            <a class="nav-link fw-semibold px-2" href="#">Entrar</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero text-center">
+      <div class="container">
+        <h1 class="hero-title">El cambio<br class="d-none d-md-inline"> comienza aquí<span class="dot-red">.</span></h1>
+        <p class="hero-sub">Te ayudaremos a lograr el cambio que quieres ver</p>
+
+        <form class="hero-form mx-auto" onsubmit="return false;">
+          <label for="prompt" class="hero-label fw-semibold">Iniciar una petición para...</label>
+          <div class="prompt-box position-relative">
+            <textarea id="prompt" class="form-control prompt-input" rows="3" placeholder="Es muy difícil moverse en silla de ruedas por Toledo"></textarea>
+            <button class="btn btn-warning btn-arrow position-absolute" type="submit" aria-label="Generar mi petición">
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+        </form>
+
+        <a href="crear.html" class="draft-link d-inline-block mt-3">Ya tengo el borrador de mi petición <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </section>
+
+    <!-- ============ PERSONAS REALES ============ -->
+    <section class="people py-4 py-lg-5">
+      <div class="container">
+        <h2 class="section-title text-center mb-4 mb-lg-5">Conoce a personas reales que están transformando sus comunidades.</h2>
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3 g-lg-4 justify-content-center people-row">
+          <div class="col text-center">
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="avatar-round" alt="Organizadora de una petición">
+            <span class="pill-status"><span class="dot-red"></span>
+            Trending!<small>204.524 firmas</small></span>
+            <p class="people-quote">"No podemos más. Stop guardias médicas de 24 horas"</p>
+          </div>
+          <div class="col text-center">
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="avatar-round" alt="Organizadora de una petición">
+            <span class="pill-status"><span class="dot-red"></span>
+            Victory!<small>157.902 firmas</small></span>
+          </div>
+          <div class="col text-center">
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="avatar-round" alt="Organizadora de una petición">
+            <span class="pill-status"><span class="dot-red"></span>
+            Victory!<small>96.222 firmas</small></span>
+          </div>
+          <div class="col text-center">
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="avatar-round" alt="Organizador de una petición">
+            <span class="pill-status"><span class="dot-red"></span>
+            Trending!<small>67.342 firmas</small></span>
+          </div>
+          <div class="col text-center">
+            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" class="avatar-round" alt="Organizadora de una petición">
+            <span class="pill-status"><span class="dot-red"></span>
+            Trending!<small>100.912 firmas</small></span>
+          </div>
+        </div>
+        <div class="people-nav d-md-none">
+          <button class="btn-nav" type="button" data-people-prev aria-label="Anterior"><i class="bi bi-arrow-left"></i></button>
+          <button class="btn-nav" type="button" data-people-next aria-label="Siguiente"><i class="bi bi-arrow-right"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CÓMO FUNCIONA ============ -->
+    <section class="steps py-5">
+      <div class="container text-center">
+        <h2 class="section-title mb-5">Usar la plataforma de peticiones n.º 1 es fácil</h2>
+        <div class="row row-cols-1 row-cols-md-3 g-4 g-md-5 position-relative steps-row">
+          <div class="col">
+            <div class="step-num mx-auto">1</div>
+            <h3 class="h6 fw-bold mt-3 mb-1">Crea una petición en dos minutos</h3>
+            <p class="small text-muted-cg mb-0">Más de 2.000 nuevas cada día</p>
+          </div>
+          <div class="col">
+            <div class="step-num mx-auto">2</div>
+            <h3 class="h6 fw-bold mt-3 mb-1">Consigue apoyo gracias a nuestra gran comunidad</h3>
+            <p class="small text-muted-cg mb-0">Más de 500.000 firmas diarias</p>
+          </div>
+          <div class="col">
+            <div class="step-num mx-auto">3</div>
+            <h3 class="h6 fw-bold mt-3 mb-1">Llega hasta los responsables gracias a nuestra red</h3>
+            <p class="small text-muted-cg mb-0">Más de 1.000 notificados a diario</p>
+          </div>
+        </div>
+
+        <div class="mt-5">
+          <button class="btn btn-tips w-100 text-start d-flex justify-content-between align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#consejos" aria-expanded="false" aria-controls="consejos">
+            <span>Lee nuestros consejos y guías sobre cómo crear una petición</span>
+            <i class="bi bi-chevron-down"></i>
+          </button>
+          <div class="collapse" id="consejos">
+            <ul class="list-unstyled small text-start mt-3 mb-0">
+              <li class="mb-2"><a href="#">Crear tu petición</a></li>
+              <li class="mb-2"><a href="#">Reunir firmas</a></li>
+              <li class="mb-2"><a href="#">Contactar a los medios</a></li>
+              <li><a href="#">Involucrar al destinatario de la petición</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CAUSAS ============ -->
+    <section class="causes py-5">
+      <div class="container">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-start gap-3 mb-4">
+          <div>
+            <h2 class="section-title mb-1">Apoya causas que te importan</h2>
+            <p class="text-muted-cg mb-0">Encuentra peticiones que afecten a tu comunidad.</p>
+          </div>
+          <a href="peticiones.html" class="btn btn-outline-dark btn-pill px-4 align-self-start d-none d-md-inline-block">Ver todos los temas</a>
+        </div>
+
+        <div class="d-flex flex-wrap gap-2 mb-4">
+          <a href="peticiones.html" class="chip">Sanidad <i class="bi bi-arrow-right"></i></a>
+          <a href="peticiones.html" class="chip">Animales <i class="bi bi-arrow-right"></i></a>
+          <a href="peticiones.html" class="chip">Medio Ambiente <i class="bi bi-arrow-right"></i></a>
+          <a href="peticiones.html" class="chip">Educacion <i class="bi bi-arrow-right"></i></a>
+          <a href="peticiones.html" class="chip">Justicia Economica <i class="bi bi-arrow-right"></i></a>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3 g-lg-4 causes-grid">
+          <div class="col">
+            <article class="cause-card">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="">
+              <div class="cause-body">
+                <span class="cause-bar"></span>
+                <h3 class="cause-title">Adamuz y Urda, nunca más: compromiso de todos los gobiernos con la seguridad...</h3>
+                <p class="cause-count"><i class="bi bi-pen"></i> 57.696 firmas</p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="cause-card">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="">
+              <div class="cause-body">
+                <span class="cause-bar"></span>
+                <h3 class="cause-title">"Garantizar acceso a terapia hormonal para menopausia con pauta médica"</h3>
+                <p class="cause-count"><i class="bi bi-pen"></i> 34.374 firmas</p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="cause-card">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="">
+              <div class="cause-body">
+                <span class="cause-bar"></span>
+                <h3 class="cause-title">Tengo 94 años y llevo 3 meses ingresada. Pongan TV gratis en todos los hospitales</h3>
+                <p class="cause-count"><i class="bi bi-pen"></i> 66.261 firmas</p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="cause-card">
+              <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt="">
+              <div class="cause-body">
+                <span class="cause-bar"></span>
+                <h3 class="cause-title">El asesino de mi hijo tenía 17 años. Pido revisar YA la ley del menor para casos graves</h3>
+                <p class="cause-count"><i class="bi bi-pen"></i> 100.912 firmas</p>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="d-md-none mt-4">
+          <a href="peticiones.html" class="btn btn-outline-dark btn-pill w-100 py-2">Ver todos los temas</a>
+        </div>
+      </div>
+    </section>
+
+    </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer-cg pt-5 pb-4">
+    <div class="container">
+      <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-4">
+        <div class="col">
+          <h2 class="footer-head">Participa</h2>
+          <ul class="list-unstyled footer-list mb-0">
+            <li><a href="crear.html">Inicia una petición</a></li>
+            <li><a href="peticiones.html">Busca por tema</a></li>
+            <li><a href="peticiones.html">Busca peticiones</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h2 class="footer-head">Aprende</h2>
+          <ul class="list-unstyled footer-list mb-0">
+            <li><a href="#">Guías para peticiones</a></li>
+            <li><a href="#">Crea tu petición</a></li>
+            <li><a href="#">Reúne firmas</a></li>
+            <li><a href="#">Contacta a los medios</a></li>
+            <li><a href="#">Involucra al destinatario de la petición</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h2 class="footer-head">Sobre nosotros</h2>
+          <ul class="list-unstyled footer-list mb-0">
+            <li><a href="#">Sobre Change.org</a></li>
+            <li><a href="#">Visión</a></li>
+            <li><a href="#">Equipo</a></li>
+            <li><a href="#">Empleo</a></li>
+            <li><a href="#">Prensa</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h2 class="footer-head">Ayuda y aspectos legales</h2>
+          <ul class="list-unstyled footer-list mb-0">
+            <li><a href="#">Centro de ayuda</a></li>
+            <li><a href="#">Normas de la comunidad</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            <li><a href="#">Términos de uso</a></li>
+            <li><a href="#">Política de cookies</a></li>
+            <li><a href="#">Administra cookies</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h2 class="footer-head">Síguenos</h2>
+          <ul class="list-unstyled footer-list mb-0">
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">X</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">TikTok</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="my-4">
+
+      <div class="d-flex flex-column flex-md-row justify-content-between gap-3">
+        <div class="small">
+          <p class="fw-bold mb-1">© 2026, Change.org, PBC</p>
+          <p class="text-muted-cg mb-0">Esta web está protegida por reCAPTCHA y por Google <a href="#">Política de privacidad</a> y <a href="#">Normas de uso</a>.</p>
+        </div>
+        <div>
+          <select class="form-select form-select-sm lang-select w-100" aria-label="Idioma">
+            <option selected>Español (España)</option>
+            <option>English (United States)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/vendor/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
